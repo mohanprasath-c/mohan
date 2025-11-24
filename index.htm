@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Mohanprasath C | .NET Developer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with experience in .NET Core, Web API, SQL Server, Angular and Automation."
-  />
+  <meta name="description"
+    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with experience in .NET Core, Web API, SQL Server, Angular and Automation." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Devicon for tech icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 
   <!-- AOS (Animate On Scroll) CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
   <style>
     /* Smooth scrolling */
@@ -31,17 +24,15 @@
     }
   </style>
 </head>
+
 <body class="bg-slate-950 text-slate-100">
   <!-- Navbar -->
   <header class="sticky top-0 z-20 bg-slate-950/90 backdrop-blur border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <!-- Profile picture -->
-        <img
-          src="profile.jpg"
-          alt="Mohanprasath profile photo"
-          class="h-9 w-9 rounded-full object-cover border border-slate-700"
-        />
+        <img src="profile.jpg" alt="Mohanprasath profile photo"
+          class="h-9 w-9 rounded-full object-cover border border-slate-700" />
         <div class="flex flex-col leading-tight">
           <span class="font-semibold">Mohanprasath C</span>
           <span class="text-xs text-slate-400">Packaged App Development Analyst</span>
@@ -56,19 +47,14 @@
         <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
       </nav>
 
-      <button
-        id="menuBtn"
-        class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700"
-      >
+      <button id="menuBtn"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700">
         <span class="text-sm">Menu</span>
       </button>
     </div>
 
     <!-- Mobile Menu -->
-    <nav
-      id="mobileMenu"
-      class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-4 pb-3"
-    >
+    <nav id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-4 pb-3">
       <div class="flex flex-col gap-2 text-sm py-2">
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
         <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
@@ -82,14 +68,10 @@
   <!-- Main content -->
   <main class="max-w-6xl mx-auto px-4 pb-16">
     <!-- Hero / Intro -->
-    <section
-      id="about"
-      class="pt-10 md:pt-16 grid md:grid-cols-2 gap-10 items-center"
-      data-aos="fade-up"
-    >
+    <section id="about" class="pt-10 md:pt-16 grid md:grid-cols-2 gap-10 items-center" data-aos="fade-up">
       <div>
         <p class="text-xs uppercase tracking-[0.3em] text-cyan-400 mb-3">
-          .NET Developer • Automation • Azure
+          .NET Developer
         </p>
         <h1 class="text-3xl md:text-4xl font-bold mb-4">
           Hi, I'm <span class="text-cyan-400">Mohanprasath</span> 👋
@@ -108,18 +90,12 @@
 
         <div class="flex flex-wrap gap-3">
           <!-- Update href to actual resume file path in your repo -->
-          <a
-            href="Mohanprasath_Resume.pdf"
-            download
-            target="_blank"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition"
-          >
+          <a href="Mohanprasath_Resume.pdf" download target="_blank"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition">
             ↓ Download Resume
           </a>
-          <a
-            href="#contact"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:border-cyan-400 hover:text-cyan-300 transition"
-          >
+          <a href="#contact"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:border-cyan-400 hover:text-cyan-300 transition">
             📩 Contact Me
           </a>
         </div>
@@ -127,7 +103,8 @@
 
       <!-- Info Card -->
       <div class="md:flex md:justify-end">
-        <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg w-full md:w-80" data-aos="fade-left">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg w-full md:w-80"
+          data-aos="fade-left">
           <h2 class="text-lg font-semibold mb-2">Quick Info</h2>
           <div class="space-y-2 text-sm text-slate-300">
             <p><span class="text-slate-400">Location:</span> Coimbatore, Tamil Nadu</p>
@@ -136,8 +113,8 @@
               <span class="text-slate-400">Experience:</span>
               <span id="experienceYearsShort"></span>
             </p>
-            <p><span class="text-slate-400">Primary Stack:</span> .NET Core, Web API, SQL Server, Angular</p>
-            <p><span class="text-slate-400">Domains:</span> Banking, Insurance, Manufacturing</p>
+            <p><span class="text-slate-400">Primary Stack:</span> .NET Core, ASP.NET Core, SQL Server</p>
+            <p><span class="text-slate-400">Domains:</span> Manufacturing, Banking, Insurance</p>
             <p><span class="text-slate-400">Certification:</span> Microsoft Azure Fundamentals (AZ-900)</p>
           </div>
         </div>
@@ -146,10 +123,7 @@
 
     <!-- Tech Stack Icons Row -->
     <section class="mt-10 md:mt-12" aria-label="Tech Stack">
-      <div
-        class="border border-slate-800 rounded-2xl bg-slate-900/60 px-4 py-4 md:px-6 md:py-5"
-        data-aos="fade-up"
-      >
+      <div class="border border-slate-800 rounded-2xl bg-slate-900/60 px-4 py-4 md:px-6 md:py-5" data-aos="fade-up">
         <p class="text-xs uppercase tracking-[0.25em] text-slate-400 mb-3">
           Tech Stack
         </p>
@@ -162,13 +136,25 @@
             <i class="devicon-csharp-plain colored"></i>
             <span class="text-xs md:text-sm text-slate-300">C#</span>
           </span>
+
           <span class="flex items-center gap-2">
-            <i class="devicon-angular-plain colored"></i>
-            <span class="text-xs md:text-sm text-slate-300">Angular</span>
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/entityframeworkcore/entityframeworkcore-original.svg" width="35px" />
+          
+            <span class="text-xs md:text-sm text-slate-300">EF Core</span>
           </span>
+
           <span class="flex items-center gap-2">
             <i class="devicon-microsoftsqlserver-plain colored"></i>
             <span class="text-xs md:text-sm text-slate-300">SQL Server</span>
+          </span>
+          <span class="flex items-center gap-2">
+           
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" width="35px" />
+          
+          
+            <span class="text-xs md:text-sm text-slate-300">SQL Developer</span>
           </span>
           <span class="flex items-center gap-2">
             <i class="devicon-azure-plain colored"></i>
@@ -178,6 +164,15 @@
             <i class="devicon-git-plain colored"></i>
             <span class="text-xs md:text-sm text-slate-300">Git</span>
           </span>
+          <span class="flex items-center gap-2">
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-plain.svg" width="35px" />
+          
+            <span class="text-xs md:text-sm text-slate-300">VB.NET</span>
+          </span>
+
+
+
         </div>
       </div>
     </section>
@@ -192,27 +187,24 @@
             .NET Core, ASP.NET Core Web API, ASP.NET MVC, Entity Framework Core, LINQ, VB.NET
           </p>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Frontend</h3>
-          <p class="text-sm text-slate-300">Angular, HTML5, CSS3, basic JavaScript</p>
-        </div>
+       
         <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="200">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Database</h3>
-          <p class="text-sm text-slate-300">SQL Server, Oracle SQL, query optimization, stored procedures</p>
+          <p class="text-sm text-slate-300">SQL Server, Oracle SQL Developer</p>
         </div>
         <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up">
-          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Automation & Testing</h3>
-          <p class="text-sm text-slate-300">Selenium, API automation concepts, regression automation</p>
+          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Automation</h3>
+          <p class="text-sm text-slate-300">Selenium</p>
         </div>
         <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="100">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Cloud & Tools</h3>
           <p class="text-sm text-slate-300">
-            Microsoft Azure, Git, Azure DevOps basics, Postman, Visual Studio, VS Code
+            Microsoft Azure, Git, Postman, Visual Studio, VS Code
           </p>
         </div>
         <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="200">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Domain Expertise</h3>
-          <p class="text-sm text-slate-300">Banking, Insurance, Manufacturing</p>
+          <p class="text-sm text-slate-300">Manufacturing, Banking, Insurance</p>
         </div>
       </div>
     </section>
@@ -254,7 +246,8 @@
         </article>
 
         <!-- LTIMindtree -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up" data-aos-delay="150">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up"
+          data-aos-delay="150">
           <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
             <h3 class="font-semibold text-sm md:text-base">
               Associate Trainee · <span class="text-cyan-300">LTIMindtree</span>
@@ -287,10 +280,10 @@
         <!-- Nordex -->
         <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up">
           <h3 class="font-semibold text-sm md:text-base mb-1">
-            Nordex – 7P Travel & Delegation Management
+            Nordex
           </h3>
           <p class="text-xs text-slate-400 mb-2">
-            Domain: Manufacturing · Tech: ASP.NET Core MVC, Angular, SQL Server
+            Domain: Manufacturing · Tech: ASP.NET Core WebApi, Angular, SQL Server
           </p>
           <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
             <li>
@@ -307,9 +300,10 @@
         </article>
 
         <!-- Allstate -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up" data-aos-delay="100">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up"
+          data-aos-delay="100">
           <h3 class="font-semibold text-sm md:text-base mb-1">
-            Allstate Insurance – Claim Management & Automation
+            Allstate Insurance
           </h3>
           <p class="text-xs text-slate-400 mb-2">
             Domain: Insurance · Tech: VB.NET, Oracle SQL, ASP.NET Core, Selenium
@@ -329,9 +323,10 @@
         </article>
 
         <!-- Silicon Valley Bank -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 md:col-span-2" data-aos="fade-up" data-aos-delay="150">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 md:col-span-2" data-aos="fade-up"
+          data-aos-delay="150">
           <h3 class="font-semibold text-sm md:text-base mb-1">
-            Silicon Valley Bank – Warrants Management System
+            First Citizens Bank
           </h3>
           <p class="text-xs text-slate-400 mb-2">
             Domain: Banking · Tech: ASP.NET MVC, SQL Server
@@ -385,7 +380,8 @@
     <!-- Contact -->
     <section id="contact" class="mt-14 md:mt-20" data-aos="fade-up">
       <h2 class="text-xl md:text-2xl font-semibold mb-4">Contact</h2>
-      <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div
+        class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div class="space-y-1 text-sm text-slate-300">
           <p>📍 Coimbatore, Tamil Nadu</p>
           <p>📞 <a href="tel:+919894038374" class="hover:text-cyan-300">+91 98940 38374</a></p>
@@ -426,7 +422,7 @@
       mobileMenu.classList.toggle("hidden");
     });
 
-   // 🔢 Dynamic experience calculation
+    // 🔢 Dynamic experience calculation
     // 🔢 Dynamic experience calculation (monthly update)
     const experienceStart = new Date("2022-08-18");
     const now = new Date();
@@ -452,4 +448,5 @@
     });
   </script>
 </body>
+
 </html>
