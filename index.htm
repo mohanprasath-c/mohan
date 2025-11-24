@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with 3.3 years of experience in .NET Core, Web API, SQL Server, Angular and Automation."
+    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with experience in .NET Core, Web API, SQL Server, Angular and Automation."
   />
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script> 
   <style>
     /* Smooth scrolling */
     html {
@@ -22,9 +22,12 @@
   <header class="sticky top-0 z-20 bg-slate-950/90 backdrop-blur border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <div class="h-9 w-9 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center text-sm font-bold">
-          MC
-        </div>
+        <!-- Profile picture instead of 'MC' -->
+        <img
+          src="profile.jpg"
+          alt="Mohanprasath profile photo"
+          class="h-12 w-15 rounded-full object-cover border border-slate-700"
+        />
         <div class="flex flex-col leading-tight">
           <span class="font-semibold">Mohanprasath C</span>
           <span class="text-xs text-slate-400">Packaged App Development Analyst</span>
@@ -74,8 +77,9 @@
           Hi, I'm <span class="text-cyan-400">Mohanprasath</span> 👋
         </h1>
         <p class="text-slate-300 leading-relaxed mb-4">
-          Packaged App Development Analyst with <span class="font-semibold">3.3 years</span> of
-          experience in <span class="font-semibold">.NET Core, Web API, SQL Server, Angular</span>
+          Packaged App Development Analyst with
+          <span id="experienceYears" class="font-semibold"></span>
+          of experience in <span class="font-semibold">.NET Core, Web API, SQL Server, Angular</span>
           and automation. Strong in legacy modernization, application development and production
           support across <span class="font-semibold">Banking, Insurance and Manufacturing</span> domains.
         </p>
@@ -108,7 +112,10 @@
           <div class="space-y-2 text-sm text-slate-300">
             <p><span class="text-slate-400">Location:</span> Coimbatore, Tamil Nadu</p>
             <p><span class="text-slate-400">Current Role:</span> Packaged App Development Analyst</p>
-            <p><span class="text-slate-400">Experience:</span> 3.3+ years</p>
+            <p>
+              <span class="text-slate-400">Experience:</span>
+              <span id="experienceYearsShort"></span>
+            </p>
             <p><span class="text-slate-400">Primary Stack:</span> .NET Core, Web API, SQL Server, Angular</p>
             <p><span class="text-slate-400">Domains:</span> Banking, Insurance, Manufacturing</p>
             <p><span class="text-slate-400">Certification:</span> Microsoft Azure Fundamentals (AZ-900)</p>
@@ -340,21 +347,45 @@
   <!-- Footer -->
   <footer class="border-t border-slate-800 py-4 mt-10">
     <div class="max-w-6xl mx-auto px-4 text-xs text-slate-500 flex flex-wrap justify-between gap-2">
-      <span>© <span id="year"></span> Mohan All rights reserved.</span>
+      <span>© <span id="year"></span> Mohan. All rights reserved.</span>
       <span>Built by ❤️ Mohan</span>
     </div>
   </footer>
 
-  <!-- Small JS for menu + year -->
+  <!-- Small JS for menu + year + dynamic experience -->
   <script>
+    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
+    // Mobile menu toggle
     const menuBtn = document.getElementById("menuBtn");
     const mobileMenu = document.getElementById("mobileMenu");
 
     menuBtn?.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
+
+    // 🔢 Dynamic experience calculation
+    // Set your professional experience start date here (first job start)
+    const experienceStart = new Date("2022-08-01"); // August 1, 2022
+
+    const now = new Date();
+    const diffMs = now - experienceStart;
+    const years = diffMs / (1000 * 60 * 60 * 24 * 365.25); // ms -> years
+
+    const yearsOneDecimal = years.toFixed(1);   // e.g. "3.3"
+    const yearsRounded = Math.floor(years);     // e.g. "3"
+
+    const expMain = document.getElementById("experienceYears");
+    const expShort = document.getElementById("experienceYearsShort");
+
+    if (expMain) {
+      expMain.textContent = yearsOneDecimal + " years";
+    }
+
+    if (expShort) {
+      expShort.textContent = yearsRounded + "+ years";
+    }
   </script>
 </body>
 </html>
