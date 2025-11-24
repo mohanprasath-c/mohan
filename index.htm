@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <title>Mohanprasath C | .NET Developer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with experience in .NET Core, Web API, SQL Server, Angular and Automation." />
+  <meta
+    name="description"
+    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with experience in .NET Core, Web API, SQL Server, Angular and Automation."
+  />
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Devicon for tech icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+  />
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+  />
+
   <style>
     /* Smooth scrolling */
     html {
@@ -16,15 +31,17 @@
     }
   </style>
 </head>
-
 <body class="bg-slate-950 text-slate-100">
   <!-- Navbar -->
   <header class="sticky top-0 z-20 bg-slate-950/90 backdrop-blur border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <!-- Profile picture instead of 'MC' -->
-        <img src="profile.jpg" alt="Mohanprasath profile photo"
-          class="h-12 w-15 rounded-full object-cover border border-slate-700" />
+        <!-- Profile picture -->
+        <img
+          src="profile.jpg"
+          alt="Mohanprasath profile photo"
+          class="h-9 w-9 rounded-full object-cover border border-slate-700"
+        />
         <div class="flex flex-col leading-tight">
           <span class="font-semibold">Mohanprasath C</span>
           <span class="text-xs text-slate-400">Packaged App Development Analyst</span>
@@ -39,14 +56,19 @@
         <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
       </nav>
 
-      <button id="menuBtn"
-        class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700">
+      <button
+        id="menuBtn"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700"
+      >
         <span class="text-sm">Menu</span>
       </button>
     </div>
 
     <!-- Mobile Menu -->
-    <nav id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-4 pb-3">
+    <nav
+      id="mobileMenu"
+      class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-4 pb-3"
+    >
       <div class="flex flex-col gap-2 text-sm py-2">
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
         <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
@@ -60,7 +82,11 @@
   <!-- Main content -->
   <main class="max-w-6xl mx-auto px-4 pb-16">
     <!-- Hero / Intro -->
-    <section id="about" class="pt-10 md:pt-16 grid md:grid-cols-2 gap-10 items-center">
+    <section
+      id="about"
+      class="pt-10 md:pt-16 grid md:grid-cols-2 gap-10 items-center"
+      data-aos="fade-up"
+    >
       <div>
         <p class="text-xs uppercase tracking-[0.3em] text-cyan-400 mb-3">
           .NET Developer • Automation • Azure
@@ -82,12 +108,18 @@
 
         <div class="flex flex-wrap gap-3">
           <!-- Update href to actual resume file path in your repo -->
-          <a href="Mohanprasath_Resume.pdf" download target="_blank"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition">
+          <a
+            href="Mohanprasath_Resume.pdf"
+            download
+            target="_blank"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition"
+          >
             ↓ Download Resume
           </a>
-          <a href="#contact"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:border-cyan-400 hover:text-cyan-300 transition">
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:border-cyan-400 hover:text-cyan-300 transition"
+          >
             📩 Contact Me
           </a>
         </div>
@@ -95,7 +127,7 @@
 
       <!-- Info Card -->
       <div class="md:flex md:justify-end">
-        <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg w-full md:w-80">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg w-full md:w-80" data-aos="fade-left">
           <h2 class="text-lg font-semibold mb-2">Quick Info</h2>
           <div class="space-y-2 text-sm text-slate-300">
             <p><span class="text-slate-400">Location:</span> Coimbatore, Tamil Nadu</p>
@@ -112,35 +144,73 @@
       </div>
     </section>
 
+    <!-- Tech Stack Icons Row -->
+    <section class="mt-10 md:mt-12" aria-label="Tech Stack">
+      <div
+        class="border border-slate-800 rounded-2xl bg-slate-900/60 px-4 py-4 md:px-6 md:py-5"
+        data-aos="fade-up"
+      >
+        <p class="text-xs uppercase tracking-[0.25em] text-slate-400 mb-3">
+          Tech Stack
+        </p>
+        <div class="flex flex-wrap items-center gap-4 text-3xl md:text-4xl">
+          <span class="flex items-center gap-2">
+            <i class="devicon-dotnetcore-plain colored"></i>
+            <span class="text-xs md:text-sm text-slate-300">.NET Core</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="devicon-csharp-plain colored"></i>
+            <span class="text-xs md:text-sm text-slate-300">C#</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="devicon-angular-plain colored"></i>
+            <span class="text-xs md:text-sm text-slate-300">Angular</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="devicon-microsoftsqlserver-plain colored"></i>
+            <span class="text-xs md:text-sm text-slate-300">SQL Server</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="devicon-azure-plain colored"></i>
+            <span class="text-xs md:text-sm text-slate-300">Azure</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="devicon-git-plain colored"></i>
+            <span class="text-xs md:text-sm text-slate-300">Git</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
     <!-- Skills -->
     <section id="skills" class="mt-14 md:mt-20">
-      <h2 class="text-xl md:text-2xl font-semibold mb-4">Technical Skills</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-4" data-aos="fade-up">Technical Skills</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Backend</h3>
           <p class="text-sm text-slate-300">
             .NET Core, ASP.NET Core Web API, ASP.NET MVC, Entity Framework Core, LINQ, VB.NET
           </p>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="100">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Frontend</h3>
           <p class="text-sm text-slate-300">Angular, HTML5, CSS3, basic JavaScript</p>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="200">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Database</h3>
           <p class="text-sm text-slate-300">SQL Server, Oracle SQL, query optimization, stored procedures</p>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Automation & Testing</h3>
           <p class="text-sm text-slate-300">Selenium, API automation concepts, regression automation</p>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="100">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Cloud & Tools</h3>
           <p class="text-sm text-slate-300">
             Microsoft Azure, Git, Azure DevOps basics, Postman, Visual Studio, VS Code
           </p>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50" data-aos="fade-up" data-aos-delay="200">
           <h3 class="text-sm font-semibold text-cyan-300 mb-2">Domain Expertise</h3>
           <p class="text-sm text-slate-300">Banking, Insurance, Manufacturing</p>
         </div>
@@ -149,10 +219,10 @@
 
     <!-- Experience -->
     <section id="experience" class="mt-14 md:mt-20">
-      <h2 class="text-xl md:text-2xl font-semibold mb-4">Professional Experience</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-4" data-aos="fade-up">Professional Experience</h2>
       <div class="space-y-6">
         <!-- Accenture -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up">
           <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
             <h3 class="font-semibold text-sm md:text-base">
               Packaged App Development Analyst · <span class="text-cyan-300">Accenture</span>
@@ -184,7 +254,7 @@
         </article>
 
         <!-- LTIMindtree -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up" data-aos-delay="150">
           <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
             <h3 class="font-semibold text-sm md:text-base">
               Associate Trainee · <span class="text-cyan-300">LTIMindtree</span>
@@ -212,10 +282,10 @@
 
     <!-- Projects -->
     <section id="projects" class="mt-14 md:mt-20">
-      <h2 class="text-xl md:text-2xl font-semibold mb-4">Key Projects</h2>
+      <h2 class="text-xl md:text-2xl font-semibold mb-4" data-aos="fade-up">Key Projects</h2>
       <div class="grid md:grid-cols-2 gap-5">
         <!-- Nordex -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up">
           <h3 class="font-semibold text-sm md:text-base mb-1">
             Nordex – 7P Travel & Delegation Management
           </h3>
@@ -237,7 +307,7 @@
         </article>
 
         <!-- Allstate -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50" data-aos="fade-up" data-aos-delay="100">
           <h3 class="font-semibold text-sm md:text-base mb-1">
             Allstate Insurance – Claim Management & Automation
           </h3>
@@ -259,7 +329,7 @@
         </article>
 
         <!-- Silicon Valley Bank -->
-        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 md:col-span-2">
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 md:col-span-2" data-aos="fade-up" data-aos-delay="150">
           <h3 class="font-semibold text-sm md:text-base mb-1">
             Silicon Valley Bank – Warrants Management System
           </h3>
@@ -284,7 +354,7 @@
 
     <!-- Education & Certifications -->
     <section class="mt-14 md:mt-20 grid md:grid-cols-2 gap-6">
-      <div>
+      <div data-aos="fade-up">
         <h2 class="text-xl md:text-2xl font-semibold mb-4">Education</h2>
         <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
           <h3 class="font-semibold text-sm md:text-base mb-1">
@@ -298,7 +368,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <h2 class="text-xl md:text-2xl font-semibold mb-4">Certifications</h2>
         <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
           <h3 class="font-semibold text-sm md:text-base mb-1">
@@ -313,10 +383,9 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="mt-14 md:mt-20">
+    <section id="contact" class="mt-14 md:mt-20" data-aos="fade-up">
       <h2 class="text-xl md:text-2xl font-semibold mb-4">Contact</h2>
-      <div
-        class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div class="space-y-1 text-sm text-slate-300">
           <p>📍 Coimbatore, Tamil Nadu</p>
           <p>📞 <a href="tel:+919894038374" class="hover:text-cyan-300">+91 98940 38374</a></p>
@@ -341,12 +410,15 @@
     </div>
   </footer>
 
-  <!-- Small JS for menu + year + dynamic experience -->
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Small JS for menu + year + dynamic experience + AOS -->
   <script>
     // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Mobile menu toggle
+    // Mobile menu
     const menuBtn = document.getElementById("menuBtn");
     const mobileMenu = document.getElementById("mobileMenu");
 
@@ -354,7 +426,7 @@
       mobileMenu.classList.toggle("hidden");
     });
 
-    // 🔢 Dynamic experience calculation
+   // 🔢 Dynamic experience calculation
     // 🔢 Dynamic experience calculation (monthly update)
     const experienceStart = new Date("2022-08-18");
     const now = new Date();
@@ -372,7 +444,12 @@
     document.getElementById("experienceYearsShort").textContent =
       yearsDecimal + " year(s)";
 
+    // AOS init
+    AOS.init({
+      duration: 700,
+      easing: 'ease-out-quart',
+      once: true
+    });
   </script>
 </body>
-
 </html>
