@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mohanprasath C | .NET Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with 3.3 years of experience in .NET Core, Web API, SQL Server, Angular and Automation."
+  />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-20 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-full bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center text-sm font-bold">
+          MC
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="font-semibold">Mohanprasath C</span>
+          <span class="text-xs text-slate-400">Packaged App Development Analyst</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+      </nav>
+
+      <button
+        id="menuBtn"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700"
+      >
+        <span class="text-sm">Menu</span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav
+      id="mobileMenu"
+      class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-4 pb-3"
+    >
+      <div class="flex flex-col gap-2 text-sm py-2">
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+        <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+        <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto px-4 pb-16">
+    <!-- Hero / Intro -->
+    <section id="about" class="pt-10 md:pt-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-cyan-400 mb-3">
+          .NET Developer • Automation • Azure
+        </p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">
+          Hi, I'm <span class="text-cyan-400">Mohanprasath</span> 👋
+        </h1>
+        <p class="text-slate-300 leading-relaxed mb-4">
+          Packaged App Development Analyst with <span class="font-semibold">3.3 years</span> of
+          experience in <span class="font-semibold">.NET Core, Web API, SQL Server, Angular</span>
+          and automation. Strong in legacy modernization, application development and production
+          support across <span class="font-semibold">Banking, Insurance and Manufacturing</span> domains.
+        </p>
+        <p class="text-slate-400 text-sm mb-6">
+          I enjoy building reliable, scalable backends, automating repetitive work, and improving
+          performance in real-world enterprise systems.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <!-- Update href to actual resume file path in your repo -->
+          <a
+            href="Mohanprasath_Resume.pdf"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition"
+          >
+            ↓ Download Resume
+          </a>
+          <a
+            href="#contact"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:border-cyan-400 hover:text-cyan-300 transition"
+          >
+            📩 Contact Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Info Card -->
+      <div class="md:flex md:justify-end">
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-lg w-full md:w-80">
+          <h2 class="text-lg font-semibold mb-2">Quick Info</h2>
+          <div class="space-y-2 text-sm text-slate-300">
+            <p><span class="text-slate-400">Location:</span> Coimbatore, Tamil Nadu</p>
+            <p><span class="text-slate-400">Current Role:</span> Packaged App Development Analyst</p>
+            <p><span class="text-slate-400">Experience:</span> 3.3+ years</p>
+            <p><span class="text-slate-400">Primary Stack:</span> .NET Core, Web API, SQL Server, Angular</p>
+            <p><span class="text-slate-400">Domains:</span> Banking, Insurance, Manufacturing</p>
+            <p><span class="text-slate-400">Certification:</span> Microsoft Azure Fundamentals (AZ-900)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mt-14 md:mt-20">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Technical Skills</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Backend</h3>
+          <p class="text-sm text-slate-300">
+            .NET Core, ASP.NET Core Web API, ASP.NET MVC, Entity Framework Core, LINQ, VB.NET
+          </p>
+        </div>
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Frontend</h3>
+          <p class="text-sm text-slate-300">Angular, HTML5, CSS3, basic JavaScript</p>
+        </div>
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Database</h3>
+          <p class="text-sm text-slate-300">SQL Server, Oracle SQL, query optimization, stored procedures</p>
+        </div>
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Automation & Testing</h3>
+          <p class="text-sm text-slate-300">Selenium, API automation concepts, regression automation</p>
+        </div>
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Cloud & Tools</h3>
+          <p class="text-sm text-slate-300">
+            Microsoft Azure, Git, Azure DevOps basics, Postman, Visual Studio, VS Code
+          </p>
+        </div>
+        <div class="border border-slate-800 rounded-2xl p-4 bg-slate-900/50">
+          <h3 class="text-sm font-semibold text-cyan-300 mb-2">Domain Expertise</h3>
+          <p class="text-sm text-slate-300">Banking, Insurance, Manufacturing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="mt-14 md:mt-20">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Professional Experience</h2>
+      <div class="space-y-6">
+        <!-- Accenture -->
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+            <h3 class="font-semibold text-sm md:text-base">
+              Packaged App Development Analyst · <span class="text-cyan-300">Accenture</span>
+            </h3>
+            <p class="text-xs md:text-sm text-slate-400">Apr 2025 – Present</p>
+          </div>
+          <p class="text-xs md:text-sm text-slate-400 mb-2">
+            Insurance domain · Allstate · Automation & backend development
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
+            <li>
+              Automated daily manual tasks using <span class="font-semibold">ASP.NET Core Web API + Selenium</span>,
+              improving team productivity.
+            </li>
+            <li>
+              Built backend logic for <span class="font-semibold">interest calculations</span> for insurance claims,
+              increasing accuracy and reducing manual effort.
+            </li>
+            <li>
+              Owned end-to-end development, enhancements, maintenance and production support for critical applications.
+            </li>
+            <li>
+              Delivered new requirements on time and improved release stability and application reliability.
+            </li>
+            <li>
+              Handled incident resolution to maintain application uptime and meet SLAs.
+            </li>
+          </ul>
+        </article>
+
+        <!-- LTIMindtree -->
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-2">
+            <h3 class="font-semibold text-sm md:text-base">
+              Associate Trainee · <span class="text-cyan-300">LTIMindtree</span>
+            </h3>
+            <p class="text-xs md:text-sm text-slate-400">Aug 2022 – Mar 2025</p>
+          </div>
+          <p class="text-xs md:text-sm text-slate-400 mb-2">
+            Manufacturing & Banking domain · Legacy modernization & support
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
+            <li>
+              Migrated legacy <span class="font-semibold">ASP.NET MVC 4.6</span> application to
+              <span class="font-semibold">.NET Core 8 + Angular</span>.
+            </li>
+            <li>
+              Rewrote legacy (including Spanish) code into clean, maintainable C# with improved structure.
+            </li>
+            <li>Improved API performance and streamlined backend workflows.</li>
+            <li>Delivered modules ahead of schedule with minimal defects.</li>
+            <li>Supported and maintained production applications used by business users.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-14 md:mt-20">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Key Projects</h2>
+      <div class="grid md:grid-cols-2 gap-5">
+        <!-- Nordex -->
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+          <h3 class="font-semibold text-sm md:text-base mb-1">
+            Nordex – 7P Travel & Delegation Management
+          </h3>
+          <p class="text-xs text-slate-400 mb-2">
+            Domain: Manufacturing · Tech: ASP.NET Core MVC, Angular, SQL Server
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
+            <li>
+              Migrated a legacy ASP.NET MVC 4.6 application to <span class="font-semibold">.NET Core 8</span>,
+              improving performance and maintainability.
+            </li>
+            <li>
+              Handled the entire 7P application for employee travel, approvals and delegation workflows.
+            </li>
+            <li>
+              Rewrote outdated and Spanish-written code into optimized, clean C#.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Allstate -->
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+          <h3 class="font-semibold text-sm md:text-base mb-1">
+            Allstate Insurance – Claim Management & Automation
+          </h3>
+          <p class="text-xs text-slate-400 mb-2">
+            Domain: Insurance · Tech: VB.NET, Oracle SQL, ASP.NET Core, Selenium
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
+            <li>
+              Created an automated application using <span class="font-semibold">ASP.NET Core Web API + Selenium</span>
+              to remove recurring manual activities done twice daily.
+            </li>
+            <li>
+              Developed backend logic for interest calculations for each claim request.
+            </li>
+            <li>
+              Provided end-to-end support including development, maintenance and incident resolution.
+            </li>
+          </ul>
+        </article>
+
+        <!-- Silicon Valley Bank -->
+        <article class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 md:col-span-2">
+          <h3 class="font-semibold text-sm md:text-base mb-1">
+            Silicon Valley Bank – Warrants Management System
+          </h3>
+          <p class="text-xs text-slate-400 mb-2">
+            Domain: Banking · Tech: ASP.NET MVC, SQL Server
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-sm text-slate-300">
+            <li>
+              Provided end-to-end ownership for enhancements, maintenance and production support of a
+              banking-domain warrants management system.
+            </li>
+            <li>
+              Ensured stable delivery of new features while following banking compliance expectations.
+            </li>
+            <li>
+              Resolved incidents quickly, improving reliability for business-critical operations.
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="mt-14 md:mt-20 grid md:grid-cols-2 gap-6">
+      <div>
+        <h2 class="text-xl md:text-2xl font-semibold mb-4">Education</h2>
+        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+          <h3 class="font-semibold text-sm md:text-base mb-1">
+            Bachelor of Science in Information Technology
+          </h3>
+          <p class="text-xs text-slate-400 mb-1">
+            KG College of Arts and Science · 2019 – 2022
+          </p>
+          <p class="text-sm text-slate-300">
+            Built strong foundations in programming, databases and software engineering principles.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-xl md:text-2xl font-semibold mb-4">Certifications</h2>
+        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50">
+          <h3 class="font-semibold text-sm md:text-base mb-1">
+            Microsoft Azure Fundamentals (AZ-900)
+          </h3>
+          <p class="text-xs text-slate-400 mb-1">Issued · April 2025</p>
+          <p class="text-sm text-slate-300">
+            Validated understanding of cloud concepts, Azure services and basic security, privacy and pricing models.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-14 md:mt-20">
+      <h2 class="text-xl md:text-2xl font-semibold mb-4">Contact</h2>
+      <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="space-y-1 text-sm text-slate-300">
+          <p>📍 Coimbatore, Tamil Nadu</p>
+          <p>📞 <a href="tel:+919894038374" class="hover:text-cyan-300">+91 98940 38374</a></p>
+          <p>📧
+            <a href="mailto:mohanprasathc02@gmail.com" class="hover:text-cyan-300">
+              mohanprasathc02@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="text-sm text-slate-400">
+          <p>If you’d like to discuss an opportunity or collaboration, feel free to reach out.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-4 mt-10">
+    <div class="max-w-6xl mx-auto px-4 text-xs text-slate-500 flex flex-wrap justify-between gap-2">
+      <span>© <span id="year"></span> Mohan All rights reserved.</span>
+      <span>Built by ❤️ Mohan</span>
+    </div>
+  </footer>
+
+  <!-- Small JS for menu + year -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn?.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
