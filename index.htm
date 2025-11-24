@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>Mohanprasath C | .NET Developer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with experience in .NET Core, Web API, SQL Server, Angular and Automation."
-  />
+  <meta name="description"
+    content="Portfolio of Mohanprasath C, Packaged App Development Analyst with experience in .NET Core, Web API, SQL Server, Angular and Automation." />
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script> 
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Smooth scrolling */
     html {
@@ -17,17 +16,15 @@
     }
   </style>
 </head>
+
 <body class="bg-slate-950 text-slate-100">
   <!-- Navbar -->
   <header class="sticky top-0 z-20 bg-slate-950/90 backdrop-blur border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <!-- Profile picture instead of 'MC' -->
-        <img
-          src="profile.jpg"
-          alt="Mohanprasath profile photo"
-          class="h-12 w-15 rounded-full object-cover border border-slate-700"
-        />
+        <img src="profile.jpg" alt="Mohanprasath profile photo"
+          class="h-12 w-15 rounded-full object-cover border border-slate-700" />
         <div class="flex flex-col leading-tight">
           <span class="font-semibold">Mohanprasath C</span>
           <span class="text-xs text-slate-400">Packaged App Development Analyst</span>
@@ -42,19 +39,14 @@
         <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
       </nav>
 
-      <button
-        id="menuBtn"
-        class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700"
-      >
+      <button id="menuBtn"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700">
         <span class="text-sm">Menu</span>
       </button>
     </div>
 
     <!-- Mobile Menu -->
-    <nav
-      id="mobileMenu"
-      class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-4 pb-3"
-    >
+    <nav id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur px-4 pb-3">
       <div class="flex flex-col gap-2 text-sm py-2">
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
         <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
@@ -90,16 +82,12 @@
 
         <div class="flex flex-wrap gap-3">
           <!-- Update href to actual resume file path in your repo -->
-          <a
-            href="Mohanprasath_Resume.pdf"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition"
-          >
+          <a href="Mohanprasath_Resume.pdf" download target="_blank"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cyan-500 text-slate-950 text-sm font-semibold hover:bg-cyan-400 transition">
             ↓ Download Resume
           </a>
-          <a
-            href="#contact"
-            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:border-cyan-400 hover:text-cyan-300 transition"
-          >
+          <a href="#contact"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:border-cyan-400 hover:text-cyan-300 transition">
             📩 Contact Me
           </a>
         </div>
@@ -327,7 +315,8 @@
     <!-- Contact -->
     <section id="contact" class="mt-14 md:mt-20">
       <h2 class="text-xl md:text-2xl font-semibold mb-4">Contact</h2>
-      <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div
+        class="border border-slate-800 rounded-2xl p-5 bg-slate-900/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div class="space-y-1 text-sm text-slate-300">
           <p>📍 Coimbatore, Tamil Nadu</p>
           <p>📞 <a href="tel:+919894038374" class="hover:text-cyan-300">+91 98940 38374</a></p>
@@ -366,26 +355,24 @@
     });
 
     // 🔢 Dynamic experience calculation
-    // Set your professional experience start date here (first job start)
-    const experienceStart = new Date("2022-08-01"); // August 1, 2022
-
+    // 🔢 Dynamic experience calculation (monthly update)
+    const experienceStart = new Date("2022-08-18");
     const now = new Date();
-    const diffMs = now - experienceStart;
-    const years = diffMs / (1000 * 60 * 60 * 24 * 365.25); // ms -> years
 
-    const yearsOneDecimal = years.toFixed(1);   // e.g. "3.3"
-    const yearsRounded = Math.floor(years);     // e.g. "3"
+    let months =
+      (now.getFullYear() - experienceStart.getFullYear()) * 12 +
+      (now.getMonth() - experienceStart.getMonth());
 
-    const expMain = document.getElementById("experienceYears");
-    const expShort = document.getElementById("experienceYearsShort");
+    let yearsDecimal = (months / 12).toFixed(1);
+    let yearsRounded = Math.floor(months / 12);
 
-    if (expMain) {
-      expMain.textContent = yearsOneDecimal + " years";
-    }
+    document.getElementById("experienceYears").textContent =
+      yearsDecimal + " year(s)";
 
-    if (expShort) {
-      expShort.textContent = yearsRounded + "+ years";
-    }
+    document.getElementById("experienceYearsShort").textContent =
+      yearsDecimal + " year(s)";
+
   </script>
 </body>
+
 </html>
